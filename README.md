@@ -20,10 +20,10 @@ There is a big button on the bottom right of each page indicating next page on c
 **e. External Libraries**
 
 For this project, the only external library I used besides HTML/CSS & standard Javascript is JQuery. 
-Name of the Tool: JQuery
-Why Use It: Honestly because it's required lol. 
-How I Used It: I've already used localStorage for storing favorite stores list and switching between day and night mode, so I just used JQuery for the button that is controlling the switch between modes.
-What It Adds to My Website: Additional complexity.
+- Name of the Tool: JQuery
+- Why Use It: Honestly because it's required lol. 
+- How I Used It: I've already used localStorage for storing favorite stores list and switching between day and night mode, so I just used JQuery for the button that is controlling the switch between modes.
+- What It Adds to My Website: Additional complexity.
 
 **f. Iteration from HW7**
 
