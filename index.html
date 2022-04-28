@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <title>homepage</title>
+    <style>
+        body{
+            background: url("images/bg1.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+            position: relative;
+            font-family: Helvetica;
+        }
+        .header{
+            height: 100px;
+            display: flex;
+        }
+        .h_bk{
+            flex: 1;
+            line-height: 100px;
+        }
+        .header nav{
+            flex: 3;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 90px;
+        }
+        .header nav a li{
+            float: left;
+            margin: 0 25px;
+            font-size: 24px;
+            line-height: 100px;
+            color: #000;
+        }
+        .header nav a:last-child li{
+            color: #fff;
+        }
+        /* con */
+        .con{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .con_tl{
+            font-size: 64px;
+            width: 624px;
+            margin-top: 200px;
+        }
+        .con p{
+            font-size: 24px;
+        }
+        .re{
+            position: absolute;
+            right: 200px;
+            top: 630px;
+        }
+        .re p{
+            font-size: 64px;
+            font-weight: 400;
+        }
+        .re p a{
+            color: #000;
+        }
+        .btn{
+            height: 53px;
+            line-height: 53px;
+            width: 266px;
+            font-size: 24px;
+            border-radius: 15px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="h_bk">
+        </div>
+        <nav>
+            <a href="Giant_Eagle.html"><li>Selecet by Store Brands</li></a>
+            <a href="meat.html"><li>Select by Grocery Type</li></a>
+            <a href="javascript:;"><li>Home</li></a>
+            <a href="favorite.html"><li>My Favorite Store(s)</li></a>
+        </nav>
+    </div>
+    <div class="con">
+        <div class="con_tl">
+            A Beginner's Guide to Shop Groceries in Pittsburgh
+        </div>
+        <p>a project by nick chen</p>
+        <div class="re">
+            <p><a href="about.html">Let's Begin!</a></p>
+            <div class="btn">switch to night mode</div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+<script>
+    $(document).ready(function(){
+        $(".btn").mouseover(function(){
+            $(this).css("border","1px black solid");
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>homepage</title>
+    <style>
+        body{
+            background: url("images/bg1.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+            position: relative;
+            font-family: Helvetica;
+        }
+        .header{
+            height: 100px;
+            display: flex;
+        }
+        .h_bk{
+            flex: 1;
+            line-height: 100px;
+        }
+        .h_bk{
+            padding-left:80px;
+        }
+        .h_bk img{
+            margin-top: 35px;
+        }
+        .header nav{
+            flex: 3;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 90px;
+        }
+        .header nav a li{
+            float: left;
+            margin: 0 25px;
+            font-size: 24px;
+            line-height: 100px;
+            color: #000;
+        }
+        .header nav a:last-child li{
+            color: #fff;
+        }
+        /* con */
+        .con{
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .re{
+            position: absolute;
+            right: 200px;
+            top: 630px;
+        }
+        .re p{
+            font-size: 64px;
+            font-weight: 400;
+        }
+        .btn{
+            height: 53px;
+            line-height: 53px;
+            width: 266px;
+            font-size: 24px;
+            border-radius: 15px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .addBtn{
+            background: #296138;
+            height: 50px;
+            line-height: 50px;
+            width: 307px;
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .con_tl{
+            font-size: 64px;
+            color: #CF5630;
+            font-weight: bold;
+        }
+        .con_zt>p{
+            margin-top: 40px;
+            font-size: 24px;
+        }
+        .con_zt_list{
+            margin-top: 30px;
+        }
+        .con_zt_list>p{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .con_zt_list_msg{
+            display: flex;
+        }
+        .con_zt_list_msg div:nth-child(2){
+            margin-left: 10px;
+        }
+        .removeBtn{
+            width: 102px;
+            height: 28px;
+            text-align: center;
+            line-height: 28px;
+            border-radius: 5px;
+            color: #fff;
+            background: #CF5630;
+            margin-left: 5px;
+        }
+        .tx{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="h_bk">
+            <a href="javascript:history.back(-1);"><</a>
+        </div>
+        <nav>
+            <a href="Giant_Eagle.html"><li>Selecet by Store Brands</li></a>
+            <a href="meat.html"><li>Select by Grocery Type</li></a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="favorite.html"><li>My Favorite Store(s)</li></a>
+        </nav>
+    </div>
+    <div class="con">
+        <p class="con_tl">
+            My Favorite Store(s)
+        </p>
+        <div class="con_zt">
+            <p>Total (2):</p>
+            <!-- <div class="con_zt_list">
+                <p class="tx">Oops, you haven’t added any stores yet...</p>
+                <p>Target</p>
+                <div class="con_zt_list_msg">
+                    <div>
+                        <img src="images/a.png" alt="">
+                    </div>
+                    <div>
+                        501 W Waterfront Dr (Waterfront)
+                    </div>
+                    <div class="removeBtn">
+                        remove
+                    </div>
+                </div>
+            </div>
+            <div class="con_zt_list">
+                <p>Costco</p>
+                <div class="con_zt_list_msg">
+                    <div>
+                        <img src="images/a.png" alt="">
+                    </div>
+                    <div>
+                        501 W Waterfront Dr (Waterfront)
+                    </div>
+                    <div class="removeBtn">
+                        remove
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script>
+     
+     var o = document.getElementsByClassName('con_zt')[0]; 
+     let storeList = JSON.parse(window.localStorage.getItem('storeList')) || []
+      //创建DIV 
+      function createDIV() { 
+        let storeList = JSON.parse(window.localStorage.getItem('storeList')) || []
+        console.log(storeList);
+        var div = document.createElement( "div"); 
+        o.innerHTML = ''
+        div.innerHTML += `<p>Total (${storeList.length}):</p>`; 
+        for(let i = 0; i < storeList.length; i++){
+          div.innerHTML += `<div class="con_zt_list">
+                <div class="con_zt_list_msg">
+                    <div>
+                        <img src="images/a.png" alt="">
+                    </div>
+                    <div>
+                        ${storeList[i]}
+                    </div>
+                    <div class="removeBtn">
+                        remove
+                    </div>
+                </div>
+            </div>`
+        }
+        if(storeList.length == 0){
+          div.innerHTML += `<div class="con_zt_list">
+            <p class="tx">Oops, you haven’t added any stores yet...</p>
+            </div>`
+        }
+        
+        console.log(o);
+        o.appendChild(div); 
+      } 
+      createDIV();
+
+      let removeBtn = document.getElementsByClassName("removeBtn")
+      for(let i = 0; i < removeBtn.length; i++){
+        removeBtn[i].onclick = function() {
+          console.log(removeBtn[i]);
+          let storeList = JSON.parse(window.localStorage.getItem('storeList')) || []
+          storeList.splice(i, 1)
+          window.localStorage.setItem('storeList', JSON.stringify(storeList))
+          createDIV()
+          location.reload()
+        }
+      }
+
+    </script>
+</body>
+</html>

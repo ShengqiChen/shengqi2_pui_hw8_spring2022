@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>homepage</title>
+    <style>
+        body{
+            background: url("images/bg1.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+            position: relative;
+            font-family: Helvetica;
+        }
+        .header{
+            height: 100px;
+            display: flex;
+        }
+        .h_bk{
+            flex: 1;
+            line-height: 100px;
+        }
+        .header nav{
+            flex: 3;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 90px;
+        }
+        .header nav a li{
+            float: left;
+            margin: 0 25px;
+            font-size: 24px;
+            line-height: 100px;
+            color: #000;
+        }
+        .header nav a:last-child li{
+            color: #fff;
+        }
+        .h_bk{
+            padding-left:80px;
+        }
+        .h_bk img{
+            margin-top: 35px;
+        }
+        /* con */
+        .con{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .con_tl{
+            font-size: 64px;
+            line-height: 64px;
+            width: 624px;
+            margin-top: 100px;
+        }
+        .con p{
+            font-size: 20px;
+            width: 660px;
+        }
+        .con p:nth-child(2){
+            margin-top: 80px;
+        }
+        .con p:nth-child(3){
+            margin-top: 30px;
+        }
+        .re{
+            position: absolute;
+            right: 200px;
+            top: 630px;
+        }
+        .re p{
+            width: 427px;
+            font-size: 64px;
+            font-weight: 400;
+            line-height: 70px;
+        }
+        .re p a{
+            color: #000;
+        }
+        .btn{
+            height: 53px;
+            line-height: 53px;
+            width: 266px;
+            font-size: 24px;
+            border-radius: 15px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="h_bk">
+            <a href="javascript:history.back(-1);"><</a>
+        </div>
+        <nav>
+            <a href="Giant_Eagle.html"><li>Selecet by Store Brands</li></a>
+            <a href="meat.html"><li>Select by Grocery Type</li></a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="favorite.html"><li>My Favorite Store(s)</li></a>
+        </nav>
+    </div>
+    <div class="con">
+        <div class="con_tl">
+            So you love grocery shopping...
+        </div>
+        <p>
+            I do too! The inspiration for this project stems from my love for weekly grocery shopping and checking out different grocery stores. 
+        </p>
+        <p>
+            With this website, you can now check out different grocery stores virtually! If you see a store you like, you can add it to your favorite stores list and save the store’s info for visiting later! Hope you enjoy this little journey as much as I do :)
+        </p>
+        
+    </div>
+    <div class="re">
+        <p><a href="Giant_Eagle.html">The journey starts here...</a></p>
+        <div class="btn">switch to night mode</div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

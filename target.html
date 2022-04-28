@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>homepage</title>
+    <style>
+        body{
+            background: url("images/bg1.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+            position: relative;
+            font-family: Helvetica;
+        }
+        .header{
+            height: 100px;
+            display: flex;
+        }
+        .h_bk{
+            flex: 1;
+            line-height: 100px;
+        }
+        .header nav{
+            flex: 3;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 90px;
+        }
+        .header nav a li{
+            float: left;
+            margin: 0 25px;
+            font-size: 24px;
+            line-height: 100px;
+            color: #000;
+        }
+        .header nav a:last-child li{
+            color: #fff;
+        }
+        .h_bk{
+            padding-left:80px;
+        }
+        .h_bk img{
+            margin-top: 35px;
+        }
+        /* con */
+        .con{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .con_tl{
+            font-size: 64px;
+            width: 624px;
+        }
+       
+        .re{
+            position: absolute;
+            right: 200px;
+            top: 630px;
+        }
+        .re p{
+            font-size: 64px;
+            font-weight: 400;
+        }
+        .re p a{
+            color: #000;
+        }
+        .btn{
+            height: 53px;
+            line-height: 53px;
+            width: 266px;
+            font-size: 24px;
+            border-radius: 15px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .con_msg{
+            display: flex;
+            margin-top: 30px;
+        }
+        .con_locat{
+            font-size: 24px;
+            margin-left: 30px;
+            padding-top: 30px;
+        }
+        .con_locat_list{
+            display: flex;
+            margin-top: 10px;
+        }
+        .addBtn{
+            background: #296138;
+            height: 50px;
+            line-height: 50px;
+            width: 307px;
+            border-radius: 5px;
+            color: #fff;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .con_int{
+            height: 226px;
+            width: 624px;
+            font-size: 16px;
+        }
+        .con_int p{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="h_bk">
+            <a href="javascript:history.back(-1);"><</a>
+        </div>
+        <nav>
+            <a href="Giant_Eagle.html"><li>Selecet by Store Brands</li></a>
+            <a href="meat.html"><li>Select by Grocery Type</li></a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="favorite.html"><li>My Favorite Store(s)</li></a>
+        </nav>
+    </div>
+    <div class="con">
+        <p class="con_tl">
+            Target
+        </p>
+        <div class="con_msg">
+            <div>
+                <img src="images/g4.png" alt="">
+            </div>
+            <div class="con_locat">
+                <p>Store Locations:</p>
+                <div class="con_locat_list">
+                    <div>
+                        <img src="images/a.png" alt="">
+                    </div>
+                    <div>
+                        6231 Penn Ave (East Liberty)
+                    </div>
+                </div>
+                <div class="con_locat_list">
+                    <div>
+                        <img src="images/a.png" alt="">
+                    </div>
+                    <div>
+                        360 E Waterfront Dr (Homestead)
+                    </div>
+                </div>
+                
+                <div class="addBtn" id="addBtn1">
+                    Add to my favorite stores
+                </div>
+            </div>
+        </div>
+        <div class="con_int">
+            <p>
+                Target, compared to the previous three stores, has a lot less  groceries in stock. However, Target does offers a lot more in items such as electronics, home decorations, beddings, and college supplies. Prices at target are usually on the lower end compared to Whole Foods and Trader Joe’s, and the Target in East Liberty, which is closest to campus, also has a CVS Pharmacy and a Starbucks inside, which could be helpful if you want to pick up your prescriptions while shopping for groceries.
+            </p>
+            <p>
+                Fun fact: Target is opening another location downtown, as envisioned in the photo above.
+            </p>
+        </div>
+        <div class="re">
+            <p><a href="Costco.html">Costco -></a></p>
+            <div class="btn" id="btn3">switch to night mode</div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
