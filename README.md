@@ -15,7 +15,14 @@ My website is an information tool called "A Beginner's Guide to Shop Groceries i
 
 **d. Using the Website**
 
-There is a big button on the bottom right of each page indicating next page on click. There is also a button for switching between day and night modes right under the next page button. On the top navigation bar, there are "select by store brands", "select by grocery type", "home", and "my favorite store list". By clicking "select by store brands", users can view the grocery stores in sequence. By clicking "select by grocery type", users can see a recommended grocery store list based on each type of grocery (e.g. meat). By clicking "home", the user is navigated to the home page. By clicking "my favorite stores", the users can see their saved stores at any time.
+- There is a big button on the bottom right of each page indicating next page on click. 
+- There is also a button for switching between day and night modes right under the next page button. 
+- On the top navigation bar, there are "select by store brands", "select by grocery type", "home", and "my favorite store list". 
+- By clicking "select by store brands", users can view the grocery stores in sequence. 
+- By clicking "select by grocery type", users can see a recommended grocery store list based on each type of grocery (e.g. meat). 
+- By clicking "home", the user is navigated to the home page. 
+- By clicking "my favorite stores", the users can see their saved stores at any time.
+- Also on each page, by clicking "add to my favorite stores", users can add their stores of choice to the "my favorite stores" list.
 
 **e. External Libraries**
 
